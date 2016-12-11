@@ -15,6 +15,11 @@
 		57FBC77B1DF9492F001D967A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FBC7791DF9492F001D967A /* LaunchScreen.storyboard */; };
 		57FBC7861DF9492F001D967A /* MultistageVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC7851DF9492F001D967A /* MultistageVoiceTests.m */; };
 		57FBC7911DF9492F001D967A /* MultistageVoiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC7901DF9492F001D967A /* MultistageVoiceUITests.m */; };
+		57FBC7A01DF94B1C001D967A /* AVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC79F1DF94B1C001D967A /* AVManager.m */; };
+		57FBC7A31DF94B85001D967A /* VoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FBC7A21DF94B85001D967A /* VoiceItem.m */; };
+		57FBC7A71DFA9EEB001D967A /* 4355CCF0-1B93-443C-9FA7-91CCD0CFE05B.mov in Resources */ = {isa = PBXBuildFile; fileRef = 57FBC7A41DFA9EEB001D967A /* 4355CCF0-1B93-443C-9FA7-91CCD0CFE05B.mov */; };
+		57FBC7A81DFA9EEB001D967A /* 5B310DBA-F295-47DE-9D32-0F831776D219.mov in Resources */ = {isa = PBXBuildFile; fileRef = 57FBC7A51DFA9EEB001D967A /* 5B310DBA-F295-47DE-9D32-0F831776D219.mov */; };
+		57FBC7A91DFA9EEB001D967A /* combine.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 57FBC7A61DFA9EEB001D967A /* combine.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		57FBC78C1DF9492F001D967A /* MultistageVoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultistageVoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FBC7901DF9492F001D967A /* MultistageVoiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultistageVoiceUITests.m; sourceTree = "<group>"; };
 		57FBC7921DF9492F001D967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FBC79E1DF94B1C001D967A /* AVManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVManager.h; sourceTree = "<group>"; };
+		57FBC79F1DF94B1C001D967A /* AVManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVManager.m; sourceTree = "<group>"; };
+		57FBC7A11DF94B85001D967A /* VoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceItem.h; sourceTree = "<group>"; };
+		57FBC7A21DF94B85001D967A /* VoiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceItem.m; sourceTree = "<group>"; };
+		57FBC7A41DFA9EEB001D967A /* 4355CCF0-1B93-443C-9FA7-91CCD0CFE05B.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "4355CCF0-1B93-443C-9FA7-91CCD0CFE05B.mov"; sourceTree = "<group>"; };
+		57FBC7A51DFA9EEB001D967A /* 5B310DBA-F295-47DE-9D32-0F831776D219.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "5B310DBA-F295-47DE-9D32-0F831776D219.mov"; sourceTree = "<group>"; };
+		57FBC7A61DFA9EEB001D967A /* combine.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = combine.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +115,15 @@
 			children = (
 				57FBC76E1DF9492F001D967A /* AppDelegate.h */,
 				57FBC76F1DF9492F001D967A /* AppDelegate.m */,
+				57FBC79E1DF94B1C001D967A /* AVManager.h */,
+				57FBC79F1DF94B1C001D967A /* AVManager.m */,
+				57FBC7A11DF94B85001D967A /* VoiceItem.h */,
+				57FBC7A21DF94B85001D967A /* VoiceItem.m */,
 				57FBC7711DF9492F001D967A /* ViewController.h */,
 				57FBC7721DF9492F001D967A /* ViewController.m */,
+				57FBC7A41DFA9EEB001D967A /* 4355CCF0-1B93-443C-9FA7-91CCD0CFE05B.mov */,
+				57FBC7A51DFA9EEB001D967A /* 5B310DBA-F295-47DE-9D32-0F831776D219.mov */,
+				57FBC7A61DFA9EEB001D967A /* combine.mp4 */,
 				57FBC7741DF9492F001D967A /* Main.storyboard */,
 				57FBC7771DF9492F001D967A /* Assets.xcassets */,
 				57FBC7791DF9492F001D967A /* LaunchScreen.storyboard */,
@@ -246,9 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FBC7A81DFA9EEB001D967A /* 5B310DBA-F295-47DE-9D32-0F831776D219.mov in Resources */,
 				57FBC77B1DF9492F001D967A /* LaunchScreen.storyboard in Resources */,
 				57FBC7781DF9492F001D967A /* Assets.xcassets in Resources */,
+				57FBC7A71DFA9EEB001D967A /* 4355CCF0-1B93-443C-9FA7-91CCD0CFE05B.mov in Resources */,
 				57FBC7761DF9492F001D967A /* Main.storyboard in Resources */,
+				57FBC7A91DFA9EEB001D967A /* combine.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FBC7A31DF94B85001D967A /* VoiceItem.m in Sources */,
+				57FBC7A01DF94B1C001D967A /* AVManager.m in Sources */,
 				57FBC7731DF9492F001D967A /* ViewController.m in Sources */,
 				57FBC7701DF9492F001D967A /* AppDelegate.m in Sources */,
 				57FBC76D1DF9492F001D967A /* main.m in Sources */,
