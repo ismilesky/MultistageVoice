@@ -65,7 +65,7 @@ static AVManager *instance = nil;
         completedBlock(NO, @"合成视频失败");
         return;
     }
-    [videoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, assetVideo.duration) ofTrack:assetVideoTrack atTime:voiceItem.startTime error:&error];
+    [videoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, assetVideo.duration) ofTrack:assetVideoTrack atTime:kCMTimeZero error:&error];
     if (error) {
         completedBlock(NO, @"合成视频失败");
         return;
@@ -73,7 +73,7 @@ static AVManager *instance = nil;
     
     __block AVMutableCompositionTrack *audioTrack = [videoComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
     if (assetVoiceTrack != nil) {
-        [audioTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, assetAudio.duration) ofTrack:assetVoiceTrack atTime:kCMTimeZero error:&error];
+        [audioTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, assetAudio.duration) ofTrack:assetVoiceTrack atTime:voiceItem.startTime error:&error];
         if (error) {
             completedBlock(NO, @"添加音频失败");
             return;
